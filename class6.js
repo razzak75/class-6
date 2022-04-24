@@ -38,15 +38,15 @@ const studentData= [
 //  Total admission fees
 // =========================
 
-let totalFees= 0
-studentData.forEach((data,i)=>{
-    console.log(`${i + 1}. ${data[0]} = ${data[6]}`);
-    totalFees += parseInt(data[6])
+// let totalFees= 0
+// studentData.forEach((data,i)=>{
+//     console.log(`${i + 1}. ${data[0]} = ${data[6]}`);
+//     totalFees += parseInt(data[6])
 
-})
-console.log(`
----------------------
- Total fees= ${totalFees}`);
+// })
+// console.log(`
+// ---------------------
+//  Total fees= ${totalFees}`);
 
 
 
@@ -67,11 +67,11 @@ console.log(`
 // ===================================
 
 
-// studentData.sort().map((data,i)=>{
-//     if (data[3]==10 || data[3]==12 || data[3]==11 || data[3]==9) {
-//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}`);
-//     }
-// })
+studentData.sort().map((data,i)=>{
+    if (data[3]==10) {
+        console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}`);
+    }
+})
 
 
 
