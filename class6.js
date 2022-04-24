@@ -38,15 +38,15 @@ const studentData= [
 //  Total admission fees
 // =========================
 
-// let totalFees= 0
-// studentData.forEach((data,i)=>{
-//     console.log(`${i + 1}. ${data[0]} = ${data[6]}`);
-//     totalFees += parseInt(data[6])
+let totalFees= 0
+studentData.forEach((data,i)=>{
+    console.log(`${i + 1}. ${data[0]} = ${data[6]}`);
+    totalFees += parseInt(data[6])
 
-// })
-// console.log(`
-// ---------------------
-//  Total fees= ${totalFees}`);
+})
+console.log(`
+---------------------
+ Total fees= ${totalFees}`);
 
 
 
@@ -66,12 +66,51 @@ const studentData= [
 // - Find class wise student result
 // ===================================
 
-
-studentData.sort().map((data,i)=>{
-    if (data[3]==10) {
-        console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}`);
-    }
-})
+// console.log(`
+//  Student of class- 9
+// ========================
+// `)
+// studentData.sort().map((data,i)=>{
+//     if (data[3]==9) {
+//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}.`);
+//     }
+// })
+// console.log(`
+//  Student of class- 10
+// ========================
+// `)
+// studentData.sort().map((data,i)=>{
+//     if (data[3]==10) {
+//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}.`);
+//     }
+// })
+// console.log(`
+//  Student of class- 11
+// ========================
+// `)
+// studentData.sort().map((data,i)=>{
+//     if (data[3]==11) {
+//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}.`);
+//     }
+// })
+// console.log(`
+//  Student of class- 12
+// ========================
+// `)
+// studentData.sort().map((data,i)=>{
+//     if (data[3]==12) {
+//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}.`);
+//     }
+// })
+// console.log(`
+//  Student of class- 13
+// ========================
+// `)
+// studentData.sort().map((data,i)=>{
+//     if (data[3]==13) {
+//         console.log(`${i+1}. Hello ${data[0]}, your class is ${data[3]}.`);
+//     }
+// })
 
 
 
@@ -79,12 +118,43 @@ studentData.sort().map((data,i)=>{
 // - Location wise student result
 // =================================
 
-
+// console.log(`
+//  Students who are from Dhaka:
+// =============================
+// `)
 // studentData.forEach((data,i)=>{
-//     if (data[5]=='dhaka' || data[5]=='dighinala' || data[5]=='chittagong' || data[5]=='cumilla') {
+//     if (data[5]=='dhaka') {
 //         console.log(`${i+1}. Hi ${data[0]}, your location is ${data[5]}`);
 //     }
 // })
+// console.log(`
+//  Students who are from Cumilla:
+// ===============================
+// `)
+// studentData.forEach((data,i)=>{
+//     if (data[5]=='cumilla') {
+//         console.log(`${i+1}. Hi ${data[0]}, your location is ${data[5]}`);
+//     }
+// })
+// console.log(`
+//  Students who are from Chittagong:
+// ==================================
+// `)
+// studentData.forEach((data,i)=>{
+//     if (data[5]=='chittagong') {
+//         console.log(`${i+1}. Hi ${data[0]}, your location is ${data[5]}`);
+//     }
+// })
+// console.log(`
+//  Students who are from Dighinala:
+// =================================
+// `)
+// studentData.forEach((data,i)=>{
+//     if (data[5]=='dighinala') {
+//         console.log(`${i+1}. Hi ${data[0]}, your location is ${data[5]}`);
+//     }
+// })
+
 
 
 
